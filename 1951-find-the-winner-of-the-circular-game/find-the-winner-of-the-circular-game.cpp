@@ -1,5 +1,17 @@
 class Solution {
 public:
+// recursion r fn ta
+int findwinnerindex(int n,int k){
+// base case
+if(n==1) return 0;
+
+
+int  index = findwinnerindex(n-1,k);
+index = (index + k) % n;  // to find the original index in the original array
+
+return index;
+}
+
     int findTheWinner(int n, int k) {
         /*
 //         question e ja boleche otai korchi
@@ -27,7 +39,7 @@ public:
     */
 
 // using queue
-
+/*
    queue<int>q;   // sc -o(n)
    for(int i=1;i<=n;i++){
     q.push(i);
@@ -51,7 +63,17 @@ q.pop();
    return q.front();   // ektai mal pore thakbe sobar seshe
 
   // Total TC - O(N*K)  SC - O(n)
+*/
 
+
+//using recursion  tc - o(n)   sc -o(1) for  Follow up: Could you solve this problem in linear time with constant space?
+
+// finding the index of the winner using recursion
+
+int winner_idx = findwinnerindex(n,k);
+
+return winner_idx+1;
     }
+
 
 };
