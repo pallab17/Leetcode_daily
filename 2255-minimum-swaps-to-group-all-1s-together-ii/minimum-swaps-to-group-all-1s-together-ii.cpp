@@ -1,6 +1,8 @@
 class Solution {
 public:
     int minSwaps(vector<int>& nums) {
+        // sliding window approach used 
+        // tc - O(N) and sc - O(N) extra space use korini modulo take use korechi 
         int n = nums.size();
         int i=0;
         int j=0;
