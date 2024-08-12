@@ -1,14 +1,23 @@
 class KthLargest {
 public:
+
+// TC - O(Nlog(k)) + O(Mlog(K))
+// O(Nlog(k)) for insertion the provided nums into the pq   
+// O(Mlog(K))  for add function if total add calls = M 
+//  insertion and deletion at heap = O(no of elements ) = O(k)
+// return top element at heap = O(1)
+
 int K;
   // min heap nicchi
         priority_queue<int,vector<int>,greater<int>>pq;
+
+
     KthLargest(int k, vector<int>& nums) {
         K =k;
       
 
         // nums r element gulo pq te push korchi
-        for(auto &num : nums){
+        for(auto &num : nums){     
             pq.push(num);
 
             // size=k cross korle pop out korbo
