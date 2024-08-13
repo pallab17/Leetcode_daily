@@ -1,5 +1,7 @@
 class Solution {
 public:
+// tc - O(2^N)
+// sc - O(N)
  void solve(int angul,vector<int>& candidates,int target,vector<vector<int>>&res,vector<int>&baksho){
     if(target==0){   // base case 
         res.push_back(baksho);
