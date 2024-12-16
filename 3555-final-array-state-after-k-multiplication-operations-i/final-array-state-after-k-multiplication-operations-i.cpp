@@ -10,6 +10,23 @@ public:
             // last e return the nums array
          }
 
+     APPROACH 2 - using min heap
+         amra prootek bar minimum element khujji using O(N) which we can do in O(1) time
+         but we also need to store the index of the elements noile amra multiply korar por kon index e dhokate  hobe
+         seita bujhbo ki kore
+
+         # define P Pair<int,int>
+
+         pq->priority_queue<P,vector<P>,greater<P>pq;
+
+         for(int i=0;i<n;i++){   --> O(N)
+            pq.push({nums[i],i});   --> O(logn)
+         } total tc O(Nlogn) sudhu push kortei
+
+         tahole tc - O(Nlogn + klogn) java te eitai hobe tc best case
+
+
+
 
     
 
