@@ -2,7 +2,19 @@ class Solution {
 public:
     vector<int> getFinalState(vector<int>& nums, int k, int multiplier) {
      
+   /*brute force - approach 1 - tc -O(N * k) sc -O(1)
+         while(k--){
+            //find the minimum element in the array with its index
+            //multiply it with multiplier
+            //NOW store the new number in the exact place of the minimum element
+            // last e return the nums array
+         }
 
+
+    
+
+
+        */
 
         int  n = nums.size();
 
