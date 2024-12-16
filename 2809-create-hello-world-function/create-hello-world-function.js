@@ -29,8 +29,7 @@
   
 // }
  var createHelloWorld = () => {
-    return  () => {
-        return "Hello World";
-    }
+    return  () =>   "Hello World";
+    
   
 }
