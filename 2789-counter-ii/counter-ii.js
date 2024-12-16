@@ -2,24 +2,49 @@
  * @param {integer} init
  * @return { increment: Function, decrement: Function, reset: Function }
  */
+// var createCounter = function(init) {
+// const n = init;
+//     return obj ={
+//         increment(){
+//             return init += 1;
+
+//         },
+//         decrement(){
+//             return init -= 1;
+        
+
+//         },
+//         reset(){
+//             return init = n;
+
+
+//         }
+//     }
+    
+// };
+
+
 var createCounter = function(init) {
 const n = init;
-    return obj ={
-        increment(){
+   
+       function increment(){
             return init += 1;
 
-        },
-        decrement(){
+        }
+        function decrement(){
             return init -= 1;
         
 
-        },
-        reset(){
+        }
+         function reset(){
             return init = n;
 
 
         }
-    }
+        return{
+            increment,decrement,reset
+        }
+    
     
 };
 
