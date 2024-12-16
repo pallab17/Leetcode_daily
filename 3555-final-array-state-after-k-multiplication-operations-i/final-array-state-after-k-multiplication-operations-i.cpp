@@ -37,7 +37,31 @@ for(int i=0;i<n;i++){
 }
 make_heap(begin(heap),end(heap),grater<>());   --> tc -  O(N) 
 
-total tc - O(n) + O(klogn)
+         while(k--){   --> tc - o(k * logn)
+            pop_heap(begin(vec),end(vec),greater<>()); --> minimum element take vector r last position  e niye jacche
+            pair<int,int>temp = vec.back(); --> last element take store kore rakhchi
+            vec.pop_back();   // last element take uriye dicchi
+            int number = temp.first;   storing the value of the minimum element
+            int index = temp.second;   storing the index of the minimum element
+
+            nums[index] = number * multiplier;     
+
+            vec.push_back({nums[index],index});    new element take vector e push korchi 
+            push_heap(begin(vec),end(vec),greater<>());    heap r moton rearrange korchi 
+
+            heapify operation - O(logn)
+
+
+
+        }
+
+
+total tc - O(n) + O(klogn)  only for c++ users
+
+
+
+
+
 
     
 
