@@ -1,6 +1,12 @@
+// function createHelloWorld(){
+//     function helloWorld(){
+//         return "Hello World";
+//     }
+//     return helloWorld;
+// }
 function createHelloWorld(){
-    function helloWorld(){
+    return function helloWorld(){
         return "Hello World";
     }
-    return helloWorld;
+  
 }
