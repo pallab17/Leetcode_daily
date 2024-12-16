@@ -10,12 +10,12 @@
 //     }
   
 // }
-function createHelloWorld(){
-    return function(){
-        return "Hello World";
-    }
+// function createHelloWorld(){
+//     return function(){
+//         return "Hello World";
+//     }
   
-}
+// }
 //  var createHelloWorld = function (){
 //     return function helloWorld(){
 //         return "Hello World";
@@ -28,3 +28,9 @@ function createHelloWorld(){
 //     }
   
 // }
+ var createHelloWorld = () => {
+    return function (){
+        return "Hello World";
+    }
+  
+}
