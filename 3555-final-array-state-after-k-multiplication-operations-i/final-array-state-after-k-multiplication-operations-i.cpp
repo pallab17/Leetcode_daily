@@ -26,7 +26,18 @@ public:
          tahole tc - O(Nlogn + klogn) java te eitai hobe tc best case
 
 
+approach 3-
+now how can we improve that Nlogn tc insertion r time e using c++ language advantage
 
+using vectors directly as heap -->
+
+vector<Pair<int,int>>vec;
+for(int i=0;i<n;i++){
+    vec.push({nums[i],i});
+}
+make_heap(begin(heap),end(heap),grater<>());   --> tc -  O(N) 
+
+total tc - O(n) + O(klogn)
 
     
 
