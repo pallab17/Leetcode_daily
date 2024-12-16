@@ -10,15 +10,21 @@
 //     }
   
 // }
+function createHelloWorld(){
+    return function(){
+        return "Hello World";
+    }
+  
+}
 //  var createHelloWorld = function (){
 //     return function helloWorld(){
 //         return "Hello World";
 //     }
   
 // }
- var createHelloWorld = function (){
-    return function (){
-        return "Hello World";
-    }
+//  var createHelloWorld = function (){
+//     return function (){
+//         return "Hello World";
+//     }
   
-}
+// }
