@@ -2,6 +2,7 @@
  * @param {number} n
  * @return {Function} counter
  */
+ // closure r concept use hocche
 // var createCounter = function(n) {
 //     const count = n;
 //     return function() {
@@ -14,8 +15,14 @@
 //         return n++;
 //     };
 // };
+// var createCounter = function(n) {
+//     let count = n;
+//     return function() {
+//         return n++;
+//     };
+// };
 var createCounter = function(n) {
-    let count = n;
+  
     return function() {
         return n++;
     };
