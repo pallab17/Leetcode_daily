@@ -17,6 +17,9 @@ public:
         }
 
         return result;
+
+        // tc - O(2 * N ) as dubar kore prottek ta element visit hocche ekbar traversal r time e ekbar comaparison r time e
+        // sc - O(N)  monotonic stack aka normal stack ei  use korar r jonno 
         
     }
 };
