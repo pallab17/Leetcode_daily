@@ -1,6 +1,9 @@
 class Solution {
 public:
     int maxScore(string s) {
+        // best approach 
+        // tc = O(N) as ektai traversal korchi
+        // sc = O(!)
 
         int n= s.length();
 
