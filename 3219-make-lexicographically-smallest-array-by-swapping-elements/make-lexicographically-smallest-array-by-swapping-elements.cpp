@@ -1,11 +1,16 @@
 class Solution {
 public:
     vector<int> lexicographicallySmallestArray(vector<int>& nums, int limit) {
+
+// tc - O(nlogn)
+// sc - O(N)
+
+
 int n =nums.size();
 
 vector<int>coppby = nums;
 
-sort(coppby.begin(),coppby.end());
+sort(coppby.begin(),coppby.end());   // nlogn
 
 int currgrp = 0;
 unordered_map<int,int>numtogrp;
@@ -15,7 +20,7 @@ unordered_map<int,list<int>>grptolist;
 grptolist[currgrp].push_back(coppby[0]);  // 0 number grp e 1st sorted array mal ke add korlam
 
 
-for(int i=1;i<n;i++){
+for(int i=1;i<n;i++){  //n
     if(abs(coppby[i]-coppby[i-1])>limit){
         // new grp
         currgrp++;
@@ -27,7 +32,7 @@ for(int i=1;i<n;i++){
 
 vector<int>result(n);
 
-for(int i =0;i<n;i++){
+for(int i =0;i<n;i++){   //n
     int num= nums[i];
     int group = numtogrp[num];
     result[i]=*grptolist[group].begin();
