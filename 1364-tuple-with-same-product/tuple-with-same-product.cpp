@@ -1,6 +1,10 @@
 class Solution {
 public:
     int tupleSameProduct(vector<int>& nums) {
+
+// tc - O(N*N)
+// sc - O(N)  for map 
+
         int n = nums.size();
 
         int tuples =0;
