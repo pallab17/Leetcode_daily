@@ -1,3 +1,7 @@
+
+//Approach-2 (Using hashmaps)
+//T.C : O(n)
+//S.C : O(n)
 class Solution {
 public:
     vector<int> queryResults(int limit, vector<vector<int>>& queries) {
@@ -27,5 +31,7 @@ public:
         }
 
         return result;
+
+
     }
 };
