@@ -48,20 +48,39 @@ public:
 
         // return result;
 
+// tc =O(n)
+// sc - O(N)
+//   string result = ""; // using this string as a stack
 
-  string result = "";
+//   for(char &ch : s){
 
-  for(char &ch : s){
+//     if(isdigit(ch)){
+//         if(!result.empty()){
+//             result.pop_back();
+//         }
+//     }else{
+//             result.push_back(ch);
+//         }
+//   }
+//   return result;
 
-    if(isdigit(ch)){
-        if(!result.empty()){
-            result.pop_back();
-        }
+
+// 
+
+int i =0;
+int j=0;
+
+while(i<s.length()){
+    if(isdigit(s[i])){
+        j = max(j-1,0);  // to ensure that j is not less than 0
     }else{
-            result.push_back(ch);
-        }
-  }
-  return result;
+        s[j] =s[i];
+        j++;
+    }
+    i++;
+}
+
+return s.substr(0,j);   
 
     }
 };
