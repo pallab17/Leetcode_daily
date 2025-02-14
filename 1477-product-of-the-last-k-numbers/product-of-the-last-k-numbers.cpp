@@ -38,6 +38,8 @@
 
 
 //  follow up approach
+// tc - O(1)
+
 
 class ProductOfNumbers {
 public:
@@ -66,7 +68,7 @@ int n;
 
         
     }
-    
+    // basically cummulative multiplication array use korlam to make this product fn work in O(1) time.
     int getProduct(int k) {
        if(k>n){
         return 0;
