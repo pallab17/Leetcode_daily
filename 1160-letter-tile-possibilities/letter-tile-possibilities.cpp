@@ -1,6 +1,8 @@
 class Solution {
 public:
 
+// tc - O(N!)  n factorial = as ekta element sob kota place e bosei try korche
+// sc - O(N * N!) per combination r length = n + O(N) stack space of recursion
 
    void solve(string &tiles, string &curr,vector<bool>&used, unordered_set<string>&ans,int &n){
     ans.insert(curr);
