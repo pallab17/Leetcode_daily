@@ -1,5 +1,10 @@
 class Solution {
 public:
+
+
+// tc - O(2 ^ n *   l) 2^n = no of choices l = length of a single string
+// sc -O( 2 ^ n * l)
+
   void solve(string &curr,vector<string>&result,int n){
 
     if(curr.length()==n){
