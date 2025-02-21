@@ -9,6 +9,9 @@
  *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
  * };
  */
+
+//  tc of find element function is O(N) and tc of find function is O(1) as we have used set to store our tree nodes wala values while traversing only
+// sc -  o(N) set use korechi bole
 class FindElements {
 public:
  unordered_set<int>ps;
