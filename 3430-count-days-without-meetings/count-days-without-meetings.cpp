@@ -1,8 +1,8 @@
 class Solution {
 public:
     int countDays(int days, vector<vector<int>>& meetings) {
-        // tc-
-        // sc -
+        // tc- O(nlogn)
+        // sc -O(1)
 
         sort(begin(meetings),end(meetings));
 
@@ -16,7 +16,7 @@ public:
             }
             sesh=max(sesh,meet[1]);  // maximum kobe sesh hocche meetings
         }
-        if(sesh<days){  // onekdin age jodi meeting sesh hoye then chuti
+        if(sesh<days){  //  ekdin  ageo  jodi meeting sesh hoye then chuti
         result+=days-sesh;
         }
 
