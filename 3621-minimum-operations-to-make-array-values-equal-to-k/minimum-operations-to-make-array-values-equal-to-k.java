@@ -1,5 +1,7 @@
 class Solution {
     public int minOperations(int[] nums, int k) {
+        // tc - O(N)
+        // sc - O(N)
         Set<Integer>st = new HashSet<>();
 
         for(int x : nums){
